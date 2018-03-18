@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:400,400i,700,700i,900,900i|Josefin+Sans");
+body,
+html,
+div,
+section,
+p {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  color: #505050;
+  font-family: "Barlow Condensed", "Helvetica", sans-serif;
+}
+
+h1 {
+  font-family: "Barlow Condensed", "Helvetica", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: 2px solid #D43A4C;
+  background-color: transparent;
+  padding: .5rem 2.5rem;
+  font-family: "Barlow Condensed", "Helvetica", sans-serif;
+  font-weight: 400;
+  color: #D43A4C;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.navegation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.navegation span {
+  width: 3rem;
+  height: 1px;
+}
+
+.navegation .nav-options {
+  font-size: 20px;
+}
+
+.navegation .essential {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 10rem;
+}
+
+.banner .title-container h1 {
+  padding-top: 3rem;
+  font-size: 190px;
+  color: #505050;
+}
+
+.banner .title-container #title-animation {
+  position: relative;
+  -webkit-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+}
+
+.banner .title-container #title-animation span {
+  background-color: #FFE4D8;
+  -webkit-transition: all ease-out .2s;
+  transition: all ease-out .2s;
+}
+
+.banner .title-container #title-animation span:hover {
+  opacity: 0;
+}
+
+.banner .title-container #title-animation::after {
+  content: attr(data-hover);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  opacity: 0;
+  background-color: #D43A4C;
+  color: #ffffff;
+  -webkit-transform: translate(-150%, 0);
+          transform: translate(-150%, 0);
+  -webkit-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+}
+
+.banner .title-container #title-animation:hover::after {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.banner .title-container button {
+  margin-top: 4rem;
+  font-size: 1.5rem;
+}
+
+.banner .title-container button:hover {
+  color: #ffffff;
+  border: 0;
+  background-color: #D43A4C;
+}
+/*# sourceMappingURL=main.css.map */
