@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,400i,700,700i,900,900i|Josefin+Sans');
-//fonts
+//////fonts
 $title-font: 'Barlow Condensed',
 'Helvetica',
 sans-serif;
 $text-font: 'Josefin Sans',
 'Arial',
 sans-serif;
-//colors
+//////colors
 $red: #D43A4C;
 $white: #ffffff;
 $grey: #505050;
@@ -43,6 +43,12 @@ button {
     font-weight: 400;
     color: $red;
     transition: all 1s;
+    margin: 0;
+    &:hover {
+        color: $white;
+        border: 0;
+        background-color: $red
+    }
 }
 
 #menu-bar {
@@ -56,7 +62,6 @@ button {
     align-items: center;
     padding: 2rem;
     text-align: center;
-
     span {
         width: 3rem;
         height: 1px;
@@ -111,31 +116,24 @@ button {
         button {
             margin-top: 4rem;
             font-size: 1.5rem;
-            &:hover {
-                color: $white;
-                border: 0;
-                background-color: $red
-            }
         }
     }
-    .images-container{
+    .images-container {
         z-index: 98;
-        flex:1;
+        flex: 1;
         position: relative;
-        
-        img{
+        img {
             width: 25rem;
             height: 25rem;
             position: absolute;
             right: 10rem;
             bottom: -10rem;
             transition: all .5s;
-            &:hover{
+            &:hover {
                 transform: translate(15%, -15%);
-
             }
         }
-        #img2{
+        #img2 {
             right: 5rem;
             bottom: -2.5rem;
         }
@@ -143,23 +141,28 @@ button {
             right: -0rem;
             bottom: 5rem;
         }
-
-
-
-
     }
 }
 
 #info {
     width: 100%;
     height: 100vh;
-    background-color: $red;
+    display: flex;
+    flex-flow: column nowrap;
+    #promo {
+        flex: 2;
+        background-color: $beige;
+    }
+    #carac {
+        flex: 1;
+        background-color: $dark-beige;
+    }
 }
 
 #best-of-day {
     width: 100%;
-    height: 100vh;
-    background-color: $beige;
+    height: 150vh;
+    background-color: $white;
 }
 
 #galery {
@@ -169,7 +172,54 @@ button {
 }
 
 #main-footer {
+    display: flex;
     width: 100%;
     height: 40vh;
     background-color: #202020;
+    align-items: center;
+    color: $white;
+    #legal {
+        flex: 1;
+        p {
+            color: $white;
+            font-size: 1.2rem;
+            text-align: center;
+            font-weight: 400;
+        }
+    }
+    #newsletter {
+        flex: 1;
+        font-size: 0;
+        display: flex;
+        align-content: center;
+        label {
+            width: 100%;
+            p {
+                font-weight: 400;
+                font-style: italic;
+                font-size: 1.5rem;
+                text-align: center;
+                color: $white;
+                margin-bottom: 2rem;
+            }
+            input {
+                border: 2px solid $red;
+                background-color: transparent;
+                width: 15rem;
+                margin-left: 20%;
+                padding: .5rem;
+                font-family: $title-font;
+                font-weight: 400;
+                color: $white;
+                font-size: 1rem;
+            }
+            button {
+                font-size: 1rem;
+                color: $white;
+            }
+        }
+    }
+    #redes {
+        flex: 1;
+    }
 }
