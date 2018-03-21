@@ -190,19 +190,134 @@ button:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #FFE4D8;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#info #carac .caracts {
+  width: 20%;
+  background: #D43A4C;
 }
 
 #best-of-day {
-  width: 100%;
-  height: 150vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100vw;
+  height: 200vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
   background-color: #ffffff;
+}
+
+#best-of-day .cover {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20%;
+          flex: 1 1 20%;
+  margin: 3%;
+  width: 20%;
+  height: 480px;
+  background-color: #D43A4C;
+}
+
+#best-of-day .info {
+  text-align: center;
+  font-size: 2rem;
+  color: #505050;
+  background-color: transparent;
+}
+
+#best-of-day .info h1 {
+  margin-top: 25%;
+}
+
+#best-of-day .info button {
+  margin-top: 5%;
+  font-size: 1rem;
 }
 
 #galery {
   width: 100%;
   height: 100vh;
   background-color: #FFE4D8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#galery #lorde {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #FFF6EB;
+}
+
+#galery #else {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+#galery #else #flume {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #D43A4C;
+}
+
+#galery #else #else-2 {
+  -webkit-box-flex: 1.2;
+      -ms-flex: 1.2;
+          flex: 1.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#galery #else #else-2 #every {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: blue;
+}
+
+#galery #else #else-2 #tame {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: green;
+}
+
+#galery .album {
+  position: relative;
+  -webkit-transition: all .3s .1s;
+  transition: all .3s .1s;
+}
+
+#galery .album:hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
 }
 
 #main-footer {
@@ -266,11 +381,13 @@ button:hover {
   font-weight: 400;
   color: #ffffff;
   font-size: 1rem;
+  border-color: #ffffff;
 }
 
 #main-footer #newsletter label button {
   font-size: 1rem;
   color: #ffffff;
+  border-color: #ffffff;
 }
 
 #main-footer #redes {
