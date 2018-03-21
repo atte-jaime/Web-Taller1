@@ -118,6 +118,36 @@ button {
             }
         }
     }
+    .images-container{
+        z-index: 98;
+        flex:1;
+        position: relative;
+        
+        img{
+            width: 25rem;
+            height: 25rem;
+            position: absolute;
+            right: 10rem;
+            bottom: -10rem;
+            transition: all .5s;
+            &:hover{
+                transform: translate(15%, -15%);
+
+            }
+        }
+        #img2{
+            right: 5rem;
+            bottom: -2.5rem;
+        }
+        #img1 {
+            right: -0rem;
+            bottom: 5rem;
+        }
+
+
+
+
+    }
 }
 
 #info {
