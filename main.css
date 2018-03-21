@@ -35,11 +35,13 @@ button {
 }
 
 #menu-bar {
+  z-index: 99;
+  position: fixed;
+  margin: 0 23.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  margin: 0 auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-line-pack: center;
@@ -69,8 +71,12 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 87vh;
+  height: 100vh;
   padding: 1rem 10rem;
+}
+
+#banner .title-container {
+  padding-top: 5rem;
 }
 
 #banner .title-container h1 {

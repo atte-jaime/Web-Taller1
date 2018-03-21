@@ -46,14 +46,17 @@ button {
 }
 
 #menu-bar {
+    z-index: 99;
+    position: fixed;
+    margin: 0 23.5%;
     display: flex;
     width: 50%;
-    margin: 0 auto;
     justify-content: space-around;
     align-content: center;
     align-items: center;
     padding: 2rem;
     text-align: center;
+
     span {
         width: 3rem;
         height: 1px;
@@ -69,9 +72,10 @@ button {
 
 #banner {
     display: flex;
-    height: 87vh;
+    height: 100vh;
     padding: 1rem 10rem;
     .title-container {
+        padding-top: 5rem;
         h1 {
             padding-top: 3rem;
             font-size: 190px;
@@ -100,10 +104,8 @@ button {
                 transition: all ease-out .5s;
             }
             &:hover::after {
-                
                 opacity: 1;
-                transform: translate(0, 0);
-                //transition-delay: .4s;
+                transform: translate(0, 0); //transition-delay: .4s;
             }
         }
         button {
@@ -118,21 +120,24 @@ button {
     }
 }
 
-#info{
+#info {
     width: 100%;
     height: 100vh;
     background-color: $red;
 }
+
 #best-of-day {
     width: 100%;
     height: 100vh;
     background-color: $beige;
 }
+
 #galery {
     width: 100%;
     height: 100vh;
     background-color: $dark-beige;
 }
+
 #main-footer {
     width: 100%;
     height: 40vh;
