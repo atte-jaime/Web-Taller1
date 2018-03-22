@@ -6,5 +6,3 @@ sr.reveal('#carac');
 sr.reveal('.cover');
 sr.reveal('#galery');
 sr.reveal('#main-footer');
-
-///////////////////

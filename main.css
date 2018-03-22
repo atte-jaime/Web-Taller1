@@ -41,35 +41,41 @@ button:hover {
   background-color: #D43A4C;
 }
 
-#menu-bar {
+header {
+  width: 100vw;
+  height: 100px;
   z-index: 99;
   position: fixed;
+  background-color: white;
+}
+
+header #menu-bar {
   margin: 0 23.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 50%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem;
   text-align: center;
+  color: #505050;
 }
 
-#menu-bar span {
+header #menu-bar span {
   width: 3rem;
   height: 1px;
 }
 
-#menu-bar .nav-options {
+header #menu-bar .nav-options {
   font-size: 20px;
 }
 
-#menu-bar .essential {
+header #menu-bar .essential {
   font-size: 30px;
   font-weight: 700;
 }
@@ -212,7 +218,7 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 5%;
+  padding: 5% 10%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
@@ -221,7 +227,6 @@ button:hover {
       justify-content: space-around;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
-  background-color: #ffffff;
 }
 
 #best-of-day .cover {
@@ -231,7 +236,7 @@ button:hover {
   margin: 3%;
   width: 20%;
   height: 480px;
-  background-color: #D43A4C;
+  background-size: cover;
 }
 
 #best-of-day .info {
@@ -263,7 +268,8 @@ button:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: #FFF6EB;
+  background-image: url("./images/9.jpg");
+  background-size: cover;
 }
 
 #galery #else {
@@ -283,7 +289,9 @@ button:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: #D43A4C;
+  background-image: url("./images/3.jpg");
+  background-size: cover;
+  background-position-y: 50%;
 }
 
 #galery #else #else-2 {
@@ -299,14 +307,16 @@ button:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: blue;
+  background-image: url("./images/5.jpg");
+  background-size: cover;
 }
 
 #galery #else #else-2 #tame {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: green;
+  background-image: url("./images/10.jpg");
+  background-size: cover;
 }
 
 #galery .album {
@@ -315,9 +325,29 @@ button:hover {
   transition: all .3s .1s;
 }
 
+#galery .album::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  -webkit-transition: all .3s .1s;
+  transition: all .3s .1s;
+  -webkit-filter: opacity(1);
+          filter: opacity(1);
+}
+
 #galery .album:hover {
-  -webkit-transform: scale(1.05, 1.05);
-          transform: scale(1.05, 1.05);
+  -webkit-filter: blur(5px) brightness(1.2);
+          filter: blur(5px) brightness(1.2);
+}
+
+#galery .album:hover::after {
+  background-color: #ffffff;
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
 }
 
 #main-footer {
