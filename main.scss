@@ -189,19 +189,38 @@ header {
         background-size: cover;
         background-position: center;
         &:not(.info):hover {
-            border: $red solid 5px;
-            //xfilter: brightness(0.5);
-            .play-icon{
+            border: $red solid 5px; //xfilter: brightness(0.5);
+            .play-icon {
                 visibility: visible;
             }
         }
-        .play-icon{
+        .play-icon {
             visibility: hidden;
-            margin: 180px auto;
+            margin: 190px auto;
             width: 80px;
             height: 80px;
             background-image: url("./icons/play.svg");
-            background-size:cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    .playing {
+        flex: 1 1 20%;
+        margin: 3%;
+        width: 20%;
+        height: 480px;
+        background-size: cover;
+        background-position: center;
+        border: $red solid 10px;
+        filter: brightness(.5);
+        .play-icon {
+            visibility: visible;
+            margin: 190px auto;
+            width: 80px;
+            height: 80px;
+            background-image: url("./icons/play.svg");
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
         }

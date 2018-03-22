@@ -7,18 +7,20 @@ function reproducir(temp) {
     if (audio.paused == false) {
         audio.pause();
         boton.style.backgroundImage = "url('./icons/play.svg')";
+        temp.classList.add("cover");
+        temp.classList.remove("playing");
     } else {
         audio.play();
-        
         boton.style.backgroundImage = "url('./icons/pause.svg')";
+        temp.classList.add("playing");
+        temp.classList.remove("cover");
     }
 }
 
 
-canciones.forEach(element => {
-    element.addEventListener('click', function () {
-        reproducir(element);
-        
+canciones.forEach(e => {
+    e.addEventListener('click', function () {
+        reproducir(e);
     });
 });
 

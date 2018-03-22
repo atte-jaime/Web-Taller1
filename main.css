@@ -253,7 +253,32 @@ header #menu-bar .essential {
 
 #best-of-day .cover .play-icon {
   visibility: hidden;
-  margin: 180px auto;
+  margin: 190px auto;
+  width: 80px;
+  height: 80px;
+  background-image: url("./icons/play.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#best-of-day .playing {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20%;
+          flex: 1 1 20%;
+  margin: 3%;
+  width: 20%;
+  height: 480px;
+  background-size: cover;
+  background-position: center;
+  border: #D43A4C solid 10px;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+#best-of-day .playing .play-icon {
+  visibility: visible;
+  margin: 190px auto;
   width: 80px;
   height: 80px;
   background-image: url("./icons/play.svg");
