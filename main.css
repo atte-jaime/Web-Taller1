@@ -65,7 +65,7 @@ header #menu-bar {
           align-items: center;
   padding: 2rem;
   text-align: center;
-  color: #505050;
+  color: #ffffff;
 }
 
 header #menu-bar span {
@@ -95,16 +95,16 @@ header #menu-bar .essential {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  padding: 1rem 10rem;
+  padding: 1rem 12rem;
 }
 
 #banner .title-container {
-  padding-top: 10rem;
+  padding-top: 11rem;
 }
 
 #banner .title-container h1 {
   padding-top: 3rem;
-  font-size: 11rem;
+  font-size: 9rem;
   color: #ffffff;
 }
 
@@ -163,10 +163,10 @@ header #menu-bar .essential {
 }
 
 #banner .images-container img {
-  width: 24rem;
-  height: 24rem;
+  width: 23rem;
+  height: 23rem;
   position: absolute;
-  right: 10rem;
+  right: 15rem;
   bottom: -10rem;
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -178,12 +178,12 @@ header #menu-bar .essential {
 }
 
 #banner .images-container #img2 {
-  right: 5rem;
+  right: 10rem;
   bottom: -2.5rem;
 }
 
 #banner .images-container #img1 {
-  right: -0rem;
+  right: 5rem;
   bottom: 5rem;
 }
 
@@ -334,6 +334,8 @@ header #menu-bar .essential {
   height: 480px;
   background-size: cover;
   background-position: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 #best-of-day .cover:not(.info):hover {
@@ -383,7 +385,7 @@ header #menu-bar .essential {
 #best-of-day .info {
   text-align: center;
   font-size: 2rem;
-  color: #505050;
+  color: #ffffff;
   background-color: transparent;
 }
 
