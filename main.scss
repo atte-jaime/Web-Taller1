@@ -57,9 +57,9 @@ header {
     height: 100px;
     z-index: 99;
     position: fixed;
-    background-color: white;
+    background-color: rgba($color: #000000, $alpha:1);
     #menu-bar {
-        margin: 0 23.5%;
+        margin: 0 22%;
         display: flex;
         width: 50%;
         justify-content: space-between;
@@ -72,9 +72,15 @@ header {
             height: 1px;
         }
         .nav-options {
+            color: $white;
             font-size: 20px;
+            transition: all .3s;
+            &:hover {
+                color: $red;
+            }
         }
         .essential {
+            color: $white;
             font-size: 30px;
             font-weight: 700;
         }
@@ -86,11 +92,14 @@ header {
     height: 100vh;
     padding: 1rem 10rem;
     .title-container {
-        padding-top: 5rem;
+        padding-top: 10rem;
         h1 {
             padding-top: 3rem;
-            font-size: 190px;
-            color: $grey;
+            font-size: 11rem;
+            color: $white;
+            span {
+                color: $red;
+            }
         }
         #title-animation {
             position: relative;
@@ -129,8 +138,8 @@ header {
         flex: 1;
         position: relative;
         img {
-            width: 25rem;
-            height: 25rem;
+            width: 24rem;
+            height: 24rem;
             position: absolute;
             right: 10rem;
             bottom: -10rem;
@@ -150,6 +159,16 @@ header {
     }
 }
 
+.parallax-1 {
+    /* The image used */
+    background-image: url('./images/parallax-1.jpg');
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #info {
     width: 100%;
     height: 100vh;
@@ -157,7 +176,35 @@ header {
     flex-flow: column nowrap;
     #promo {
         flex: 2;
+        width: 100%;
+        height: 100%;
+        display: flex;
         background-color: $beige;
+        .image-container {
+            flex: 1 1;
+            padding: 12% 0 12% 12%;
+        }
+        .info-container {
+            flex: 1.8;
+            position: relative;
+            display: inline;
+            margin: auto;
+            h1 {
+                color: $grey;
+                font-size: 4rem;
+                span {
+                    background-color: $red;
+                    color: $white;
+                }
+            }
+            p {
+                margin-left: 5%;
+                width: 40%;
+                margin-top: 3rem;
+                font-size: 1.2rem;
+                font-family: $text-font;
+            }
+        }
     }
     #carac {
         flex: 1;
@@ -166,7 +213,29 @@ header {
         justify-content: space-evenly;
         .caracts {
             width: 20%;
-            background: $red;
+            padding: 20% 0%;
+            color: $grey;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            img {
+                width: 40px;
+                height: 40px;
+                margin: 5% auto;
+            }
+            h1 {
+                margin-top: 10%;
+                font-weight: 700;
+                font-style: italic;
+                font-size: 1.8rem;
+            }
+            p {
+                width: 90%;
+                margin: 10% 0;
+                text-align: center;
+                font-family: $text-font;
+                font-size: 1.2rem;
+            }
         }
     }
 }
@@ -189,7 +258,7 @@ header {
         background-size: cover;
         background-position: center;
         &:not(.info):hover {
-            border: $red solid 5px; //xfilter: brightness(0.5);
+            border: $red solid 5px;
             .play-icon {
                 visibility: visible;
             }
@@ -213,7 +282,7 @@ header {
         background-size: cover;
         background-position: center;
         border: $red solid 10px;
-        filter: brightness(.5);
+        filter: brightness(1.5);
         .play-icon {
             visibility: visible;
             margin: 190px auto;
@@ -238,6 +307,16 @@ header {
             font-size: 1rem;
         }
     }
+}
+
+.parallax-2 {
+    /* The image used */
+    background-image: url('./images/parallax-2.jpg');
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #galery {
@@ -314,6 +393,10 @@ header {
             font-size: 1.2rem;
             text-align: center;
             font-weight: 400;
+            transition: all .3s;
+            &:hover {
+                color: $red;
+            }
         }
     }
     #newsletter {

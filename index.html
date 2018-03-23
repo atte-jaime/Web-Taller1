@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Essential Sounds</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="./icons/logo.svg">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
         </article>
     </header>
 
-    <article id='banner'>
+    <article id='banner' class="parallax-1">
         <div class="title-container">
             <h1>Y O U R</h1>
             <h1 id='title-animation' data-hover="  _ S T Y L E ">
@@ -37,16 +38,37 @@
     </article>
 
     <article id="info">
-        <div id="promo"></div>
+        <div id="promo">
+            <div class="image-container">
+                <img src="./images/albumes.png" alt="Álbumes">
+            </div>
+            <div class="info-container">
+                <h1>N E W</br>
+                    <span>  _ R E L E A S E S  </span>
+                </h1>
+                <p>New releases everyday, everytime. Listen to your favorite artist in the best quality posible.</p>
+            </div>
+        </div>
         <div id="carac">
-            <div class="caracts"></div>
-            <div class="caracts"></div>
-            <div class="caracts"></div>
+            <div class="caracts">
+                <img src="./icons/information.svg" alt="Comprar">
+                <h1>SOUND QUALITY</h1>
+                <p>The best quality in the palm of your hand.</p>
+            </div>
+            <div class="caracts">
+                <img src="./icons/information.svg" alt="Comprar">
+                <h1>EXCLUSIVITY</h1>
+                <p>The best quality in the palm of your hand.</p>
+            </div>
+            <div class="caracts">
+                <img src="./icons/information.svg" alt="Comprar">
+                <h1>ESPECIAL EDITIONS</h1>
+                <p>The best quality in the palm of your hand.</p>
+            </div>
         </div>
     </article>
 
-    
-    <article id="best-of-day">
+    <article id="best-of-day" class="parallax-2">
         <div class="cover" style="background-image: url('./images/1.jpg');">
             <audio class="song" src="./songs/Kendrick Lamar.mp3" loop="loop" type="audio/mp3"></audio>
             <audio class="song" src="./songs/Kendrick Lamar.ogg" loop="loop" type="audio/ogg"></audio>
@@ -116,17 +138,18 @@
         <div id="newsletter">
             <label>
                 <p>WEEKLY NEWSLETTER</p>
-                <input type="text">
-                <button type="submit">SUBSCRIBE</button>
+                <input id='msg' type="text">
+                <button id='submit-btn' type="submit">SUBSCRIBE</button>
             </label>
         </div>
         <div id="redes">
-            <img src="./icons/facebook.svg" alt="Facebook">
-            <img src="./icons/instagram.svg" alt="Instagram">
-            <img src="./icons/twitter.svg" alt="Twitter">
+            <a href=https://www.facebook.com/><img src="./icons/facebook.svg" alt="Facebook"></a>
+            <a href=https://www.instagram.com/atte_jaime/><img src="./icons/instagram.svg" alt="Instagram"></a>
+            <a href=https://www.twitter.com/><img src="./icons/twitter.svg" alt="Twitter"></a>
         </div>
     </footer>
 
+    <script src="https://unpkg.com/sweetalert2@7.17.0/dist/sweetalert2.all.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="main.js"></script>
 </body>

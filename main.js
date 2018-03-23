@@ -24,14 +24,31 @@ canciones.forEach(e => {
     });
 });
 
-
-
-
-
 //SCROLL REVEAL
 window.sr = ScrollReveal();
 sr.reveal('#promo');
 sr.reveal('#carac');
 sr.reveal('.cover');
 sr.reveal('#galery');
-sr.reveal('#main-footer');
+
+//SWEET ALERT
+
+var btn = document.querySelector('#submit-btn');
+var msg = document.querySelector('#msg');
+btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (!msg) return;
+    swal({
+        type: 'success',           
+        title: '¡Genial!',
+        text: 'Gra  cias por subscribirte',
+        timer: 2000,
+        showConfirmButton: false
+    });
+    msg.value = '';
+});
+
+
+if (window.location != document.querySelector('#banner')) {
+    
+}

@@ -48,11 +48,11 @@ header {
   height: 100px;
   z-index: 99;
   position: fixed;
-  background-color: white;
+  background-color: black;
 }
 
 header #menu-bar {
-  margin: 0 23.5%;
+  margin: 0 22%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,10 +74,18 @@ header #menu-bar span {
 }
 
 header #menu-bar .nav-options {
+  color: #ffffff;
   font-size: 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+header #menu-bar .nav-options:hover {
+  color: #D43A4C;
 }
 
 header #menu-bar .essential {
+  color: #ffffff;
   font-size: 30px;
   font-weight: 700;
 }
@@ -91,13 +99,17 @@ header #menu-bar .essential {
 }
 
 #banner .title-container {
-  padding-top: 5rem;
+  padding-top: 10rem;
 }
 
 #banner .title-container h1 {
   padding-top: 3rem;
-  font-size: 190px;
-  color: #505050;
+  font-size: 11rem;
+  color: #ffffff;
+}
+
+#banner .title-container h1 span {
+  color: #D43A4C;
 }
 
 #banner .title-container #title-animation {
@@ -151,8 +163,8 @@ header #menu-bar .essential {
 }
 
 #banner .images-container img {
-  width: 25rem;
-  height: 25rem;
+  width: 24rem;
+  height: 24rem;
   position: absolute;
   right: 10rem;
   bottom: -10rem;
@@ -175,6 +187,16 @@ header #menu-bar .essential {
   bottom: 5rem;
 }
 
+.parallax-1 {
+  /* The image used */
+  background-image: url("./images/parallax-1.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #info {
   width: 100%;
   height: 100vh;
@@ -191,7 +213,46 @@ header #menu-bar .essential {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #FFF6EB;
+}
+
+#info #promo .image-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  padding: 12% 0 12% 12%;
+}
+
+#info #promo .info-container {
+  -webkit-box-flex: 1.8;
+      -ms-flex: 1.8;
+          flex: 1.8;
+  position: relative;
+  display: inline;
+  margin: auto;
+}
+
+#info #promo .info-container h1 {
+  color: #505050;
+  font-size: 4rem;
+}
+
+#info #promo .info-container h1 span {
+  background-color: #D43A4C;
+  color: #ffffff;
+}
+
+#info #promo .info-container p {
+  margin-left: 5%;
+  width: 40%;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  font-family: "Josefin Sans", "Arial", sans-serif;
 }
 
 #info #carac {
@@ -209,7 +270,39 @@ header #menu-bar .essential {
 
 #info #carac .caracts {
   width: 20%;
-  background: #D43A4C;
+  padding: 20% 0%;
+  color: #505050;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#info #carac .caracts img {
+  width: 40px;
+  height: 40px;
+  margin: 5% auto;
+}
+
+#info #carac .caracts h1 {
+  margin-top: 10%;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.8rem;
+}
+
+#info #carac .caracts p {
+  width: 90%;
+  margin: 10% 0;
+  text-align: center;
+  font-family: "Josefin Sans", "Arial", sans-serif;
+  font-size: 1.2rem;
 }
 
 #best-of-day {
@@ -272,8 +365,8 @@ header #menu-bar .essential {
   background-size: cover;
   background-position: center;
   border: #D43A4C solid 10px;
-  -webkit-filter: brightness(0.5);
-          filter: brightness(0.5);
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
 }
 
 #best-of-day .playing .play-icon {
@@ -301,6 +394,16 @@ header #menu-bar .essential {
 #best-of-day .info button {
   margin-top: 5%;
   font-size: 1rem;
+}
+
+.parallax-2 {
+  /* The image used */
+  background-image: url("./images/parallax-2.jpg");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #galery {
@@ -426,6 +529,12 @@ header #menu-bar .essential {
   font-size: 1.2rem;
   text-align: center;
   font-weight: 400;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#main-footer #legal p:hover {
+  color: #D43A4C;
 }
 
 #main-footer #newsletter {
