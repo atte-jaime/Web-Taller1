@@ -423,6 +423,59 @@ header #menu-bar .essential {
           flex: 1;
   background-image: url("./images/9.jpg");
   background-size: cover;
+  padding: 5%;
+}
+
+#galery #lorde .info-product-container {
+  visibility: hidden;
+}
+
+#galery #lorde .info-product-container .name-album {
+  color: #ffffff;
+  font-size: 5rem;
+}
+
+#galery #lorde .info-product-container .name-artist {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #505050;
+}
+
+#galery #lorde .info-product-container .name-artist span {
+  background-color: #ffffff;
+}
+
+#galery #lorde .info-product-container p {
+  font-size: 2rem;
+  color: #ffffff;
+  padding: 5%;
+}
+
+#galery #lorde .info-product-container ol {
+  padding-left: 10%;
+}
+
+#galery #lorde .info-product-container ol li {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+#galery #lorde .info-product-container .price {
+  font-family: "Barlow Condensed", "Helvetica", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 3rem;
+  text-align: right;
+  color: #505050;
+}
+
+#galery #lorde .info-product-container .price span {
+  padding: 2% 3%;
+  background-color: #ffffff;
+}
+
+#galery #lorde:hover .info-product-container {
+  visibility: visible;
 }
 
 #galery #else {
@@ -493,8 +546,8 @@ header #menu-bar .essential {
 }
 
 #galery .album:hover {
-  -webkit-filter: blur(5px) brightness(1.2);
-          filter: blur(5px) brightness(1.2);
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
 }
 
 #galery .album:hover::after {

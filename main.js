@@ -47,8 +47,3 @@ btn.addEventListener("click", function (e) {
     });
     msg.value = '';
 });
-
-
-if (window.location != document.querySelector('#banner')) {
-    
-}
